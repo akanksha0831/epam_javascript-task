@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+input[type=text], input[type=password], input[type=date] {
+width: 35%;
+padding: 15px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        border-radius: 10px;  
+}
+button {
+        background-color:#33ccff ;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 35%;
+        border-radius: 10px;
+}
+button:hover {
+        opacity: 0.8;
+}
+
+.container {
+        padding-left: 440px;
+}
+.example{
+padding-left:840px;
+position:relative;
+left:10px;
+top:-35px;
+}
+input,.btn {
+        width: 100%;
+        padding: 12px;
+        border: none;
+        border-radius: 4px;
+        margin: 5px 0;
+        opacity: 0.85;
+        display: inline-block;
+        font-size: 17px;
+        line-height: 20px;
+        text-decoration: none;
+}
+input:hover,.btn:hover {
+        opacity: 1;
+}
+.hr {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  border: 0.5px solid #ddd;
+  height: 1px;
+  width:490px;
+}
+.hr-innertext {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+ ! border: 1px solid #ccc;
+  border-radius: 50%;
+  padding: 8px 15px;
+  !opacity:0.3;
+}
+.col {
+        width: 34%;
+        padding: 14px 20px;
+        margin: 7px 0px;
+        display: inline-block;
+        border-radius: 10px;  
+}
+.fb {
+        background-color: #4646d2;
+        color: white;
+}
+.google {
+        background-color: #ff0000;
+        color: white;
+}
+.input-field {
+        width: 100%;
+        padding: 10px;
+        outline: none;
+}
+
+.sample {
+  background-color:#ace600;
+  color:white;
+}
+@media screen and (max-width: 650px) {
+  .col {
+        width: 100%;
+        margin-top: 0;
+  }
+}
+</style>
+<script src="loginformvalidation.js"></script>
+</head>
+<body onload="document.regform.uname.focus();">
+<form name='regform' onSubmit="return formValidation();">
+<center>
+	<br><br>
+	<label for="uname"></label>
+        <input class="input-container" type="text" placeholder="mail@example.com" name="uname" required>
+	<i class="fa fa-envelope"></i><br>
+
+        <label for="psw"></label>
+        <input class="input-container" type="password" placeholder="password" name="psw" required>
+	<i class="fa fa-key icon"></i><br>
+
+	<label for="mobile"></label>
+        <input class="input-container" type="text" placeholder="Mobile Number" name="mobile" required>
+	<i class="fa-lg fa-mobile" aria-hidden="true"></i><br>
+
+	<label for="dob"></label>
+        <input class="input-container" type="date" placeholder="Date of Birth" name="dob" required>
+	<i class="fa fa-birthday-cake" aria-hidden="true"></i><br><br>
+       
+        <button name="submit" type="submit" value="Submit"><b>SIGN IN</b></button><br>
+</center>
+</form>
+  <div class="container">
+    <p>Forgot your password?</p></div>
+    <a href="" class="example">Register!</a>
+<center>
+<div class="hr">
+    <h5><span class="hr-innertext"><font color="#b3b3b3">OR</span></h5>
+</div><br>
+<div class="col">
+        <a href="" class="fb btn"><i class="fa fa-facebook fa-fw"></i></a><br>
+        <a href="" class="google btn"><i class="fa fa-google fa-fw"></i></a><br><br><br>
+	<a href="" class="sample btn"><b>EPAM LOGIN</b></a>
+</div>
+</center>
+</body>
+</html>
